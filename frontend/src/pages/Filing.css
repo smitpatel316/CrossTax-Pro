@@ -1,0 +1,278 @@
+.filing-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 1.75rem;
+  color: #1A365D;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: #718096;
+}
+
+/* Summary */
+.filing-summary {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.filing-summary h2 {
+  margin: 0 0 1rem;
+  font-size: 1.125rem;
+  color: #1A365D;
+}
+
+.filing-item {
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filing-item.us {
+  background: #EBF8FF;
+  border: 1px solid #90CDF4;
+}
+
+.filing-item.ca {
+  background: #F0FFF4;
+  border: 1px solid #9AE6B4;
+}
+
+.filing-item:last-child {
+  margin-bottom: 0;
+}
+
+.filing-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.filing-header .flag {
+  font-size: 1.5rem;
+}
+
+.filing-header h3 {
+  margin: 0;
+  color: #1A365D;
+}
+
+.filing-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+
+.detail-row span:first-child {
+  color: #718096;
+}
+
+.detail-row span:last-child {
+  font-weight: 600;
+  color: #2D3748;
+}
+
+.status.ready {
+  color: #276749;
+  font-weight: 600;
+}
+
+/* Consent */
+.consent-section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.consent-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.consent-checkbox:last-child {
+  margin-bottom: 0;
+}
+
+.consent-checkbox input {
+  margin-top: 0.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: #1A365D;
+}
+
+.consent-checkbox span {
+  font-size: 0.875rem;
+  color: #4A5568;
+}
+
+/* Security */
+.security-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #F0FFF4;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.security-banner svg {
+  color: #276749;
+  flex-shrink: 0;
+}
+
+.security-banner strong {
+  display: block;
+  color: #276749;
+  margin-bottom: 0.25rem;
+}
+
+.security-banner p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #4A5568;
+}
+
+/* Actions */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.btn-primary, .btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #276749;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #2F855A;
+}
+
+.btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: white;
+  color: #4A5568;
+  border: 1px solid #E2E8F0;
+}
+
+.btn-secondary:hover {
+  background: #F7FAFC;
+}
+
+/* Success Screen */
+.success-screen {
+  text-align: center;
+  padding: 2rem;
+}
+
+.success-screen svg {
+  color: #276749;
+  margin-bottom: 1rem;
+}
+
+.success-screen h1 {
+  color: #1A365D;
+  margin-bottom: 0.5rem;
+}
+
+.success-screen > p {
+  color: #718096;
+  margin-bottom: 2rem;
+}
+
+.confirmation-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.confirmation-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: #F0FFF4;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.confirmation-card .flag {
+  font-size: 1.5rem;
+}
+
+.confirmation-card strong {
+  display: block;
+  color: #276749;
+}
+
+.confirmation-card span {
+  font-size: 0.875rem;
+  color: #4A5568;
+}
+
+.next-steps {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.next-steps h3 {
+  margin: 0 0 1rem;
+  color: #1A365D;
+}
+
+.next-steps ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.next-steps li {
+  margin-bottom: 0.5rem;
+  color: #4A5568;
+}

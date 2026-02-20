@@ -1,0 +1,280 @@
+.documents-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 1.75rem;
+  color: #1A365D;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: #718096;
+}
+
+/* Upload Area */
+.upload-area {
+  border: 2px dashed #CBD5E0;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #F7FAFC;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.upload-area:hover, .upload-area.active {
+  border-color: #1A365D;
+  background: #EBF4FF;
+}
+
+.upload-area svg {
+  color: #A0AEC0;
+  margin-bottom: 1rem;
+}
+
+.upload-area.active svg {
+  color: #1A365D;
+}
+
+.upload-area h3 {
+  margin: 0 0 0.5rem;
+  color: #2D3748;
+}
+
+.upload-area p {
+  margin: 0;
+  color: #718096;
+  font-size: 0.875rem;
+}
+
+.upload-area input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Upload Progress */
+.upload-progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #E2E8F0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #1A365D;
+  animation: progress 1s ease-in-out infinite;
+}
+
+@keyframes progress {
+  0% { width: 0%; }
+  50% { width: 70%; }
+  100% { width: 100%; }
+}
+
+/* Required Section */
+.required-section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.required-section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.125rem;
+  color: #1A365D;
+}
+
+.required-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.75rem;
+}
+
+.required-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: #FFF5F5;
+  border-radius: 8px;
+  color: #C53030;
+}
+
+.required-item.uploaded {
+  background: #F0FFF4;
+  color: #276749;
+}
+
+.doc-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.doc-type {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.doc-desc {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+/* Uploaded Section */
+.uploaded-section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.uploaded-section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.125rem;
+  color: #1A365D;
+}
+
+.documents-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.document-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #F7FAFC;
+  border-radius: 8px;
+}
+
+.document-item svg {
+  color: #4A5568;
+}
+
+.doc-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.doc-name {
+  font-weight: 500;
+  color: #2D3748;
+}
+
+.doc-meta {
+  font-size: 0.75rem;
+  color: #718096;
+}
+
+.remove-btn {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  color: #A0AEC0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.remove-btn:hover {
+  color: #C53030;
+  background: #FED7D7;
+}
+
+/* Security Note */
+.security-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: #F0FFF4;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.security-note svg {
+  color: #276749;
+  flex-shrink: 0;
+}
+
+.security-note strong {
+  display: block;
+  color: #276749;
+  margin-bottom: 0.25rem;
+}
+
+.security-note p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #4A5568;
+}
+
+/* Actions */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #E2E8F0;
+}
+
+.btn-primary, .btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #1A365D;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #2D4A77;
+}
+
+.btn-secondary {
+  background: white;
+  color: #4A5568;
+  border: 1px solid #E2E8F0;
+}
+
+.btn-secondary:hover {
+  background: #F7FAFC;
+}
